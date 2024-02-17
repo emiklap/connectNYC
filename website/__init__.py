@@ -22,6 +22,12 @@ def create_app():
     
     create_database(app)
 
+    from .views import views
+    from .auth import auth
+
+    app.register_blueprint(views, url_prefix='/')
+    app.register_blueprint(auth, url_prefix='/')
+
     return app
 
 def create_database(app):
