@@ -1,24 +1,37 @@
 {% extends "base.html" %}
 {% block title %}Landing{% endblock %} 
+
+{% block style %}
+<style>
+  .bg-img { 
+    background-image: url('../static/img/cityscape.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100%;
+  }
+</style>
+{% endblock %}
+
 {% block content %}
 
-
-  <!-- First Parallax Image with Logo Text -->
-  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <!-- Logo -->
+  <br>
+  <div class="bg-img w3-display-container w3-opacity-min" id="home">
+  <img src="../static/img/cityscape-snow.gif" width=100%>
       <div class="w3-display-middle" style="white-space:nowrap;">
         <img src="..\static\img\logo.png" width="400">
       </div>
   </div>
 
-
   <br>
   <p></p>
-
-    
+  
   <!-- Container (About Section) --> <!-- drop down for about sections? prob not idk-->
-  <div class="w3-content w3-container w3-padding-64" id="about">
-    <h3 class="w3-center">ABOUT CONNECTNYC</h3>
-    <p>
+  <div class="w3-content w3-container w3-padding-64" id="about" >
+    <h3 class="w3-center text-sect">ABOUT CONNECTNYC</h3>
+    <p class="text-sect">
       Welcome to connectNYC, a website dedicated to connecting New Yorkers with their fellow community members. 
       This is a platform for users to share any and all information related to the various neighborhoods in NYC.
       Not only is this a great way for users to explore new neighborhoods, but this is also a place for neighbors to discuss important issues within their community.
@@ -27,8 +40,8 @@
   </div>
 
   <div class="w3-content w3-container w3-padding-64" id="contact">
-    <h3 class="w3-center">ABOUT THE TEAM</h3>
-    <p>
+    <h3 class="w3-center text-sect ">ABOUT THE TEAM</h3>
+    <p class="text-sect">
       We are a team of four sophomore undergraduates Daedalus honors students studying Computer Science at CUNY Hunter College. 
       As native New Yorkers, we want to foster community between the diverse neighborhoods that make our city one of a kind.  
       That is why we created ConnectNYC: a platform for sharing the good and the bad in our city. 
