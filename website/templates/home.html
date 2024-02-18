@@ -1,0 +1,40 @@
+{% extends "base.html" %} {% block title %} Changed {% endblock %}
+
+{% block style %}
+<style>
+    .layout {
+    display: grid;
+    grid-template-columns: 275px auto 350px;
+    margin: 0 auto;
+    max-width: 1200px;
+    }
+</style>
+{% endblock %}
+{% block home %}
+<!--<h1>This is the home page</h1>-->
+<div class="layout">
+    <div class="layout__left-sidebar">
+        Left sidebar
+    </div>
+    <div class="layout__main">
+        Main section
+    </div>
+    <div class="layout__right-sidebar">
+        Right Sidebar
+    </div>
+
+</div>
+
+<!--<div style="display: flex; flex-direction: row; flex-wrap: wrap;">
+    <div class="w3-container" style="width:30%; padding-left:10px; background-color:blueviolet;">
+        Left sidebar
+    </div>
+    <div class="w3-container" style="width:30%; margin:10px; background-color:white;">
+        Main section
+    </div>
+    <div class="w3-container" style="width:30%; padding-left:10px; background-color:blueviolet; align-self: right;">
+        Right Sidebar
+    </div>
+</div>
+-->
+{% endblock %}

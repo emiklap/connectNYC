@@ -14,7 +14,7 @@ def index():
 
 
 @views.route('/home', methods=['GET', 'POST'])
-@login_required
+#@login_required
 def home():
     if request.method == 'POST': 
         post = request.form.get('post') # Gets the post from the HTML 
@@ -27,8 +27,8 @@ def home():
             db.session.commit()
             flash('Post added!', category='success')
     
-    return "<p>home</p>"
-    #return render_template("home.html", user=current_user)
+    #return "<p>home</p>"
+    return render_template("home.html", user=current_user)
 
 
 @views.route('/delete-post', methods=['POST'])
