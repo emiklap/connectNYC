@@ -3,4 +3,7 @@
 venv/
 .venv/
 website/__pycache__/
-instance/database.db/
+instance/
+instance/database.db
+instance
+website/templates/out_map.html
