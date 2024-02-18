@@ -1,15 +1,22 @@
 {% extends "base.html" %}
 {% block title %}Landing{% endblock %} 
 {% block content %}
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-    <div class="w3-display-middle" style="white-space:nowrap;">
-      <img src="website\templates\img\logo.png" alt="connectNYC logo">
-    </div>
-
-    <!-- button here -->
+  <br>
+  <!-- First Parallax Image with Logo Text -->
+  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+      <div class="w3-display-middle" style="white-space:nowrap;">
+        <img src="..\static\img\logo.png" width="400">
+      </div>
   </div>
-  
+  <br>
+
+  <!--fix the spacing, add functionality to button-->
+  <div class="w3-content w3-container w3-padding-64" id="login_button">
+    <button class="w3-button w3-black w3-center" type="loginbutton">
+      Login
+    </button>
+  </div>
+    
   <!-- Container (About Section) --> <!-- drop down for about sections-->
   <div class="w3-content w3-container w3-padding-64" id="about">
     <h3 class="w3-center">ABOUT CONNECTNYC</h3>
