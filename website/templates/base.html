@@ -30,12 +30,14 @@
             <i class="fa fa-bars"></i>
         </a>
         {% if user.is_authenticated %}
+        <img src="../static/img/small-logo.png" width="42px" class="w3-right">
         <a href="/home" class="w3-bar-item w3-button">HOME</a>
         <a href="/logout" class="w3-bar-item w3-button">Logout</a>
         <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
             <i class="fa fa-search"></i>
         </a>
         {% else %}
+        <img src="../static/img/small-logo.png" width="42px" class=" w3-right">
         <a href="/" class="w3-bar-item w3-button w3-hide-small"> About</a>
         <!--<a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i><i class="fa fa-envelope"></i> CONTACT</a>-->
         <a href="/login" class="w3-bar-item w3-button">Login</a>
