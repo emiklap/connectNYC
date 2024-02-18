@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/website/static/base.css">
+    
 
     <title>{% block title %}Home{% endblock %}</title>
   </head>
@@ -35,10 +36,13 @@
             <i class="fa fa-search"></i>
         </a>
         {% else %}
-        <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-        <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+        <a href="/" class="w3-bar-item w3-button w3-hide-small"> About</a>
+        <!--<a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i><i class="fa fa-envelope"></i> CONTACT</a>-->
+        <a href="/login" class="w3-bar-item w3-button">Login</a>
+        <a href="/sign-up" class="w3-bar-item w3-button">Sign Up</a>
         </div>
         {% endif %}
+       
 
         <!-- Navbar on small screens
         <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
