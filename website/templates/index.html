@@ -11,6 +11,14 @@
     background-position: center;
     min-height: 100%;
   }
+
+  .revealable{
+    position: relative;
+    transform: translateY(150 px);
+    opacity: 0;
+    transition: all 2s ease;
+    font-size: 19px;
+  }
 </style>
 {% endblock %}
 
@@ -28,42 +36,48 @@
   <p></p>
   
   <!-- Container (About Section) --> <!-- drop down for about sections? prob not idk-->
-  <div class="w3-content w3-container w3-padding-64" id="about" >
-    <h3 class="w3-center text-sect">ABOUT CONNECTNYC</h3>
-    <p class="text-sect">
-      Welcome to connectNYC, a website dedicated to connecting New Yorkers with their fellow community members. 
-      This is a platform for users to share any and all information related to the various neighborhoods in NYC.
-      Not only is this a great way for users to explore new neighborhoods, but this is also a place for neighbors to discuss important issues within their community.
-      
-    </p>
-  </div>
+    <div class="w3-content w3-container w3-padding-64" id="about" >
+      <h3 class="w3-center text-sect">ABOUT CONNECTNYC</h3>
+      <p class="text-sect" style="font-size: 18px;">
+        Welcome to connectNYC, a website dedicated to connecting New Yorkers with their fellow community members. 
+        This is a platform for users to share any and all information related to the various neighborhoods in NYC.
+        Not only is this a great way for users to explore new neighborhoods, but this is also a place for neighbors to discuss important issues within their community.
+        
+      </p>
+    </div>
+  
 
   <div class="w3-content w3-container w3-padding-64" id="contact">
     <h3 class="w3-center text-sect ">ABOUT THE TEAM</h3>
-    <p class="text-sect">
+    <p class="text-sect" style="font-size: 16px;">
       We are a team of four sophomore undergraduates Daedalus honors students studying Computer Science at CUNY Hunter College. 
       As native New Yorkers, we want to foster community between the diverse neighborhoods that make our city one of a kind.  
       That is why we created ConnectNYC: a platform for sharing the good and the bad in our city. 
       The first step to education is realization. We want to both highlight the beauty of New York City, while still keeping it real and addressing the socioeconomic disparities between our neighborhoods. 
       We hope to enlighten and inspire through this project.
     </p>
-    <br>
-    <h3 class="w3-center">OUR TEAM</h3>
-    <div class="w3-row w3-center">
-      <div class="w3-quarter w3-section w3-section">
-        <span class="w3-xlarge w3-hover-red">Daphne Luzong</span><br>
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge  w3-hover-yellow">Emily Klapper</span><br>
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge w3-hover-green">Lina Tran</span><br>
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge w3-hover-blue">Natalie Gallo</span><br>
-      </div>
-
   </div>
+
+  <div class="w3-content w3-container w3-padding-64" id="contact">
+    <h3 class="w3-center">OUR TEAM</h3>
+  <div class="w3-row w3-center">
+    <div class="w3-quarter w3-section w3-section">
+      <span class="w3-xlarge w3-hover-red">Daphne Luzong</span><br>
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge  w3-hover-yellow">Emily Klapper</span><br>
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge w3-hover-green">Lina Tran</span><br>
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge w3-hover-blue">Natalie Gallo</span><br>
+    </div>
+  </div>
+  
+</div>
+
+  
 
   </div>
 
